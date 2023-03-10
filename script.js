@@ -69,7 +69,7 @@ const convertToDiscussion = (obj) => {
     answerText.className = "answer__text";
     answerText.innerHTML = obj.answer.bodyHTML;
     answerContent.append(answerText);
-    answer.append(answerAvatarWrapper, answerContent);
+
 
     const answerInformation = document.createElement("div");
     answerInformation.className = "answer__information";
@@ -84,7 +84,7 @@ const convertToDiscussion = (obj) => {
   p.addEventListener('click', function () {
     if (p.textContent === '✅') {
       if (answer.style.display === 'none') {
-        answer.style.display = 'block'
+        answer.style.display = ''
       }
       else {
         answer.style.display = 'none'
@@ -113,7 +113,7 @@ form.addEventListener('submit', (event) => {
     author: author.value,
     answer: null,
     bodyHTML: story.value,
-    avatarUrl: '#'
+    avatarUrl: 'https://cdn-icons-png.flaticon.com/512/3177/3177440.png'
 
   };
   ul.prepend(convertToDiscussion(newDiscussion))
