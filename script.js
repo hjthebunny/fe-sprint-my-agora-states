@@ -82,11 +82,13 @@ const convertToDiscussion = (obj) => {
   answer.style.display = 'none'
 
   p.addEventListener('click', function () {
-    if (answer.style.display === 'none') {
-      answer.style.display = 'block'
-    }
-    else {
-      answer.style.display = 'none'
+    if (p.textContent === '✅') {
+      if (answer.style.display === 'none') {
+        answer.style.display = 'block'
+      }
+      else {
+        answer.style.display = 'none'
+      }
     }
   })
   allContent.append(li, answer);
