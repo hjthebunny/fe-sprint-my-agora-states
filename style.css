@@ -123,10 +123,13 @@ li.discussion__container {
     border-radius: 30px;
     background: #EFE1F5;
 
+<<<<<<< HEAD
 }
 
 li.discussion__container:hover {
     transform: scale(1.08);
+=======
+>>>>>>> 284c1d30adedf7b469eafd8346cd56ab30528f49
 }
 
 li.hide {
