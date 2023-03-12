@@ -133,3 +133,4 @@ const render = (element) => {
 const ul = document.querySelector("ul.discussions__container");
 render(ul);
 
+//페이지네이션
